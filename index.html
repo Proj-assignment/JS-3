@@ -1,0 +1,42 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <script src="index.js"></script>
+  </head>
+  <body>
+    <div class="form-container">
+      <h1>Contact Form</h1>
+      <form
+        name="contactForm"
+        method="post"
+        onsubmit="return validate()"
+        action="#"
+      >
+        <label for="name">Name: </label>
+        <input type="text" id="name" name="name" placeholder="Your name" />
+        <span class="errors"></span><br />
+        <label for="email">Email: </label>
+        <input
+          type="text"
+          placeholder="Email address"
+          id="email"
+          name="email"
+        />
+        <span class="errors"></span><br />
+        <label for="phone">Website: </label>
+        <input type="text" placeholder="Website" id="website" name="website" />
+        <span class="errors"></span><br />
+        <label for="subject">Message: </label>
+        <textarea
+          placeholder="Your message"
+          cols="132"
+          rows="5"
+          name="subject"
+          id="subject"
+        ></textarea>
+        <span class="errors"></span><br />
+        <button type="submit" value="Submit">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
